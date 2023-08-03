@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type="text/css" href="style.css"/>
+    
+    
+    <title>Acessibilidade Digital</title>
+</head>
+<body>
+    <h1>Exemplo de Acessibilidade Digital</h1>
+    
+  
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    
+    <button onclick="increaseFontSize()">Fonte +</button>
+    <button onclick="decreaseFontSize()">Fonte -</button>
+    <button onclick="resetFontSize()">Refresh</button>
+
+    
+
+
+    <h1>Acessibilidade Digital: Tornando seu Site Inclusivo para Todos</h1>
+    <h2 >Em um mundo cada vez mais conectado, a acessibilidade digital tornou-se uma prioridade fundamental para garantir que todas as pessoas possam desfrutar de uma experiência on-line inclusiva. Um site acessível é aquele que pode ser utilizado sem barreiras por indivíduos com diferentes habilidades, garantindo que todos possam acessar informações e serviços de forma igualitária.</p> 
+    
+     O primeiro passo para criar um site acessível é garantir a sua navegabilidade. Isso inclui um design responsivo, que se adapta a diferentes tamanhos de tela e dispositivos, bem como uma estrutura clara e organizada, com navegação intuitiva. Certifique-se de que as informações importantes estejam facilmente acessíveis, evitando menus complexos ou excesso de cliques.</p> 
+    
+     Outro aspecto crucial é a disponibilidade de alternativas para conteúdos não textuais, como imagens e vídeos. Utilize descrições alt text adequadas para imagens, permitindo que leitores de tela forneçam informações visuais para pessoas com deficiência visual. Para vídeos, forneça legendas ou transcrições para que pessoas com deficiência auditiva também possam entender o conteúdo.</p> 
+     
+    A cor é um elemento importante, mas não deve ser usado como a única forma de transmitir informações. Algumas pessoas têm dificuldades em distinguir certas cores, por isso é essencial utilizar contrastes adequados e oferecer opções para mudança de cores, facilitando a leitura para todos.</p> 
+
+    A tipografia também desempenha um papel fundamental na acessibilidade digital. Escolha fontes legíveis e em tamanhos adequados, permitindo que os visitantes ajustem o tamanho da fonte se necessário. Evite usar apenas itálico ou letras maiúsculas, pois isso pode dificultar a leitura.</p> 
+
+    Além disso, a navegação por teclado é crucial para pessoas com mobilidade reduzida ou que não podem utilizar o mouse. Verifique se todos os elementos do site podem ser acessados e utilizados através do teclado, garantindo que não haja dependência exclusiva de comandos de mouse.</p> 
+
+    Por fim, é essencial realizar testes de acessibilidade com usuários reais para identificar possíveis problemas e melhorar constantemente a experiência do seu site. Incentive o feedback dos usuários e esteja sempre disposto a fazer ajustes para tornar seu site cada vez mais inclusivo.</p> 
+
+    Em resumo, a acessibilidade digital é uma responsabilidade de todos os criadores de sites. Ao adotar práticas inclusivas desde o início do desenvolvimento, você contribui para um ambiente on-line mais acolhedor e acessível, garantindo que todas as pessoas possam aproveitar e interagir com o seu conteúdo sem obstáculos. Lembre-se: um site verdadeiramente bem-sucedido é aquele que pode ser apreciado por todos, independentemente de suas habilidades ou limitações.</p> 
+
+    </h2>
+    <script>
+       
+        let currentFontSize = 16;
+
+        function increaseFontSize() {
+            currentFontSize += 2;
+            document.body.style.fontSize = currentFontSize + "px";
+        }
+
+        function decreaseFontSize() {
+            currentFontSize -= 2;
+            document.body.style.fontSize = currentFontSize + "px";
+        }
+
+        function resetFontSize() {
+            currentFontSize = 16;
+            document.body.style.fontSize = currentFontSize + "px";
+        }
+
+       
+        function enableHighContrast() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        }
+
+        function disableHighContrast() {
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
+        }
+
+    
+    </script>
+</body>
+</html>
